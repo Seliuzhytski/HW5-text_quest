@@ -3,10 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class Rules : MonoBehaviour
 {
-    private int _buildIndexSceneGame = 1;
+    #region Variables
+
+    private readonly int _buildIndexSceneGame = 1;
+
+    #endregion
+
+    #region Public methods
 
     public void StartGame()
     {
         SceneManager.LoadScene(_buildIndexSceneGame);
     }
+
+    #endregion
 }

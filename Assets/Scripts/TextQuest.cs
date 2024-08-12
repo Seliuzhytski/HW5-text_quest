@@ -40,11 +40,6 @@ public class TextQuest : MonoBehaviour
     {
         _currentStep = step;
 
-        if (_currentStep.NextSteps.Length == 0)
-        {
-            Debug.Log("Game over!");
-        }
-
         UpdateUI();
     }
 
