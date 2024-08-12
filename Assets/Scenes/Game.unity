@@ -122,57 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &125483987
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 125483988}
-  - component: {fileID: 125483989}
-  m_Layer: 0
-  m_Name: StartStep
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &125483988
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125483987}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1664268475}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &125483989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125483987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 958ecefd7e054a099160cf8eb87180a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _answers: '1. Go to step 2 (1)
-
-    2. Go to step 2 (2)'
-  _description: Step 1
-  _location: StartStep
-  _nextSteps:
-  - {fileID: 1913996177}
 --- !u!1 &192972292
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,10 +166,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958ecefd7e054a099160cf8eb87180a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _answers: Finish
-  _description: Step 3
-  _location: Step 3
-  _nextSteps: []
+  _answers: "1. \u0410\u0439\u0441\u0431\u0435\u0440\u0433\n2. \u0420\u044B\u0431\u0430"
+  _description: "\xAB\u041A\u0442\u043E \u043D\u0435 \u0434\u044B\u0448\u0438\u0442,
+    \u043D\u043E \u0436\u0438\u0432\u0451\u0442; \u0445\u043E\u0442\u044C \u043D\u0435
+    \u043D\u0443\u0436\u043D\u043E - \u043C\u043D\u043E\u0433\u043E \u043F\u044C\u0451\u0442;
+    \u0438 \u0432 \u0436\u0438\u0437\u043D\u0438, \u0438 \u0432 \u0441\u043C\u0435\u0440\u0442\u0438
+    \u0442\u0435\u043B\u043E \u043A\u0430\u043A \u043B\u0435\u0434\xBB"
+  _location: "\u0422\u0435\u0431\u0435 \u043F\u043E\u0432\u0435\u0437\u043B\u043E!
+    \u0422\u0440\u0435\u0442\u044C\u044F \u0437\u0430\u0433\u0430\u0434\u043A\u0430:"
+  _nextSteps:
+  - {fileID: 1113721116}
+  - {fileID: 1344098897}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,8 +509,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -281}
-  m_SizeDelta: {x: -400, y: 300}
+  m_AnchoredPosition: {x: 0, y: -250}
+  m_SizeDelta: {x: -400, y: 380}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &854693428
 MonoBehaviour:
@@ -673,7 +629,7 @@ GameObject:
   - component: {fileID: 1113721115}
   - component: {fileID: 1113721116}
   m_Layer: 0
-  m_Name: Step - 2 (2)
+  m_Name: Step - 4 - losing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -706,9 +662,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958ecefd7e054a099160cf8eb87180a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _answers: 1. Go to step 1
-  _description: Step 2 - 2
-  _location: Step 2 - 2
+  _answers: "\u0421\u0444\u0438\u043D\u043A\u0441 \u0442\u0430\u043A \u0438 \u0441\u0438\u0434\u0435\u043B
+    \u043D\u0430 \u043F\u0443\u0442\u0438  \u0432 \u0433\u043E\u0440\u043E\u0434
+    \u0438 \u0438\u0437 \u043D\u0435\u0433\u043E \u043F\u043E\u0435\u0434\u0430\u044F
+    \u0436\u0438\u0442\u0435\u043B\u0435\u0439 \u0438 \u043F\u0443\u0442\u043D\u0438\u043A\u043E\u0432,
+    \u043F\u043E\u043A\u0430 \u043D\u0435 \u043F\u0440\u0438\u0448\u0451\u043B \u042D\u0434\u0438\u043F
+    \u0438 \u043D\u0435 \u0443\u0431\u0438\u043B \u0435\u0433\u043E."
+  _description: "\u0422\u044B \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043B \u0438
+    \u0431\u044B\u043B \u0441\u044A\u0435\u0434\u0435\u043D :("
+  _location: "\u041D\u044F\u043C-\u043D\u044F\u043C-\u043D\u044F\u043C ... \u043A\u0430\u043A\u043E\u0439
+    \u0442\u044B \u0432\u043A\u0443\u0441\u043D\u044B\u0439"
   _nextSteps:
   - {fileID: 1913996177}
 --- !u!1 &1305384298
@@ -722,7 +685,7 @@ GameObject:
   - component: {fileID: 1305384299}
   - component: {fileID: 1305384300}
   m_Layer: 0
-  m_Name: Step - 2 (1)
+  m_Name: Step - 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -755,11 +718,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958ecefd7e054a099160cf8eb87180a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _answers: 1. Go to step 3
-  _description: Step 2 - 1
-  _location: Step 2 - 1
+  _answers: "1. \u0417\u0430\u0432\u0442\u0440\u0430\n2. \u0412\u0447\u0435\u0440\u0430"
+  _description: "\xAB\u041C\u0435\u043D\u044F \u043D\u0438\u043A\u043E\u0433\u0434\u0430
+    \u043D\u0435 \u0431\u044B\u043B\u043E, \u043C\u0435\u043D\u044F \u0432\u0441\u0435\u0433\u0434\u0430
+    \u043E\u0436\u0438\u0434\u0430\u044E\u0442, \u043C\u0435\u043D\u044F \u043D\u0438\u043A\u0442\u043E
+    \u043D\u0435 \u0432\u0438\u0434\u0435\u043B \u0438 \u043D\u0435 \u0443\u0432\u0438\u0434\u0438\u0442,
+    \u0438 \u0432\u0441\u0451 \u0436\u0435 \u043D\u0430 \u043C\u0435\u043D\u044F
+    \u043F\u043E\u043B\u0430\u0433\u0430\u044E\u0442\u0441\u044F \u0432\u0441\u0435
+    \u043A\u0442\u043E \u0436\u0438\u0432\u0451\u0442 \u0438 \u0434\u044B\u0448\u0438\u0442...
+    \u0442\u0430\u043A \u043A\u0442\u043E \u044F?\xBB"
+  _location: "\u0412\u0435\u0440\u043D\u043E! \u0422\u0435\u043F\u0435\u0440\u044C
+    \u0432\u0442\u043E\u0440\u0430\u044F \u0437\u0430\u0433\u0430\u0434\u043A\u0430:"
   _nextSteps:
   - {fileID: 192972294}
+  - {fileID: 1113721116}
+--- !u!1 &1344098895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344098896}
+  - component: {fileID: 1344098897}
+  m_Layer: 0
+  m_Name: Step - 5 - win
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1344098896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344098895}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1664268475}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1344098897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344098895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 958ecefd7e054a099160cf8eb87180a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _answers: "\u0422\u044B \u043F\u0440\u043E\u0448\u0451\u043B \u0432 \u0433\u043E\u0440\u043E\u0434
+    \u0438 \u0441\u043F\u0430\u0441 \u043C\u043D\u043E\u0436\u0435\u0441\u0442\u0432\u043E
+    \u0436\u0438\u0437\u043D\u0435\u0439. \u0427\u0435\u0440\u0435\u0437 \u043D\u0435\u0434\u0435\u043B\u044E
+    \u0441\u0444\u0438\u043D\u043A\u0441\u0430 \u0443\u0431\u0438\u043B \u042D\u0434\u0438\u043F."
+  _description: "\u041F\u043E\u0431\u0435\u0434\u0430!!"
+  _location: "\u041F\u0440\u043E\u0445\u043E\u0434\u0438, \u043F\u0443\u0442\u043D\u0438\u043A,
+    \u0442\u044B \u0434\u043E\u0441\u0442\u043E\u0438\u043D \u044D\u0442\u043E\u0433\u043E!"
+  _nextSteps:
+  - {fileID: 1913996177}
 --- !u!1 &1434984893
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,9 +987,9 @@ Canvas:
   m_GameObject: {fileID: 1472242079}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1031,7 +1056,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -48, y: -48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626279915
 MonoBehaviour:
@@ -1080,15 +1105,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1208,11 +1233,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 125483988}
   - {fileID: 1913996176}
   - {fileID: 1305384299}
-  - {fileID: 1113721115}
   - {fileID: 192972293}
+  - {fileID: 1113721115}
+  - {fileID: 1344098896}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1867751324
@@ -1250,8 +1275,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -686}
-  m_SizeDelta: {x: -400, y: 300}
+  m_AnchoredPosition: {x: 0, y: -680}
+  m_SizeDelta: {x: -400, y: 350}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1867751326
 MonoBehaviour:
@@ -1335,11 +1360,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958ecefd7e054a099160cf8eb87180a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _answers: '1. Go to step 2 (1)
-
-    2. Go to step 2 (2)'
-  _description: Step 1
-  _location: Step 1
+  _answers: "1. \u0427\u0435\u043B\u043E\u0432\u0435\u043A\n2. \u041E\u0431\u0435\u0437\u044C\u044F\u043D\u0430"
+  _description: "\xAB\u0421\u043A\u0430\u0436\u0438 \u043C\u043D\u0435, \u043A\u0442\u043E
+    \u0445\u043E\u0434\u0438\u0442 \u0443\u0442\u0440\u043E\u043C \u043D\u0430 \u0447\u0435\u0442\u044B\u0440\u0451\u0445
+    \u043D\u043E\u0433\u0430\u0445, \u0434\u043D\u0451\u043C \u2014 \u043D\u0430
+    \u0434\u0432\u0443\u0445, \u0430 \u0432\u0435\u0447\u0435\u0440\u043E\u043C \u2014
+    \u043D\u0430 \u0442\u0440\u0451\u0445? \u041D\u0438\u043A\u0442\u043E \u0438\u0437
+    \u0432\u0441\u0435\u0445 \u0441\u0443\u0449\u0435\u0441\u0442\u0432, \u0436\u0438\u0432\u0443\u0449\u0438\u0445
+    \u043D\u0430 \u0437\u0435\u043C\u043B\u0435, \u043D\u0435 \u0438\u0437\u043C\u0435\u043D\u044F\u0435\u0442\u0441\u044F
+    \u0442\u0430\u043A, \u043A\u0430\u043A \u043E\u043D. \u041A\u043E\u0433\u0434\u0430
+    \u0445\u043E\u0434\u0438\u0442 \u043E\u043D \u043D\u0430 \u0447\u0435\u0442\u044B\u0440\u0451\u0445
+    \u043D\u043E\u0433\u0430\u0445, \u0442\u043E\u0433\u0434\u0430 \u043C\u0435\u043D\u044C\u0448\u0435
+    \u0443 \u043D\u0435\u0433\u043E \u0441\u0438\u043B \u0438 \u043C\u0435\u0434\u043B\u0435\u043D\u043D\u0435\u0435
+    \u0434\u0432\u0438\u0433\u0430\u0435\u0442\u0441\u044F \u043E\u043D, \u0447\u0435\u043C
+    \u0432 \u0434\u0440\u0443\u0433\u043E\u0435 \u0432\u0440\u0435\u043C\u044F\xBB"
+  _location: "\u041F\u0435\u0440\u0432\u0430\u044F \u0437\u0430\u0433\u0430\u0434\u043A\u0430"
   _nextSteps:
   - {fileID: 1305384300}
   - {fileID: 1113721116}
@@ -1378,8 +1413,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -77}
-  m_SizeDelta: {x: -400, y: 100}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: -400, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1974633356
 MonoBehaviour:
