@@ -7,6 +7,7 @@ public class TextQuest : MonoBehaviour
 
     [SerializeField] private TMP_Text _descriptionLabel;
     [SerializeField] private TMP_Text _answerLabel;
+    [SerializeField] private TMP_Text _locationLabel;
 
     [SerializeField] private Step _startStep;
     [SerializeField] private Step _currentStep;
@@ -38,10 +39,10 @@ public class TextQuest : MonoBehaviour
     private void SetCurrentStepAndUpdateUi(Step step)
     {
         _currentStep = step;
-        
-        if(_currentStep.NextSteps.Length == 0)
+
+        if (_currentStep.NextSteps.Length == 0)
         {
-            //todo: Debug.Log("Game over!");
+            Debug.Log("Game over!");
         }
 
         UpdateUI();
@@ -54,7 +55,7 @@ public class TextQuest : MonoBehaviour
         {
             return;
         }
-        
+
         int nextStepIndex = number - 1;
         Step nextStep = _currentStep.NextSteps[nextStepIndex];
         SetCurrentStepAndUpdateUi(nextStep);
@@ -64,6 +65,7 @@ public class TextQuest : MonoBehaviour
     {
         _descriptionLabel.text = _currentStep.Description;
         _answerLabel.text = _currentStep.Answers;
+        _locationLabel.text = _currentStep.Location;
     }
 
     #endregion
